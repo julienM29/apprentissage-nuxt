@@ -1,8 +1,14 @@
+<script setup lang="ts">
+useHead({
+  titleTemplate: title => title ? `${title} · Ma Biblio` : 'Ma Biblio',
+})
+</script>
+
 <template>
-  <UApp>
+  <UApp> <!-- bOITE DE NUXT UI qui englobe tout -->
     <NuxtRouteAnnouncer />
-    <NuxtLayout>
-      <NuxtPage />
+    <NuxtLayout> <!-- Charge chaque layout - base : default.vue -->
+      <NuxtPage /> <!-- page -->
     </NuxtLayout>
   </UApp>
 </template>
